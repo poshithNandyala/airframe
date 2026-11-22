@@ -17,10 +17,47 @@
     "helper": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-helper.ps1",
     "start": "electron .",
     "smoke": "electron . --smoke",
-    "dist": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-dist.ps1"
+    "dist": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-dist.ps1",
+    "preinstaller": "npm run helper",
+    "installer": "electron-builder --win nsis --x64 --publish never"
   },
   "devDependencies": {
     "@electron/packager": "^20.3.0",
-    "electron": "^45.4.1"
+    "electron": "^45.4.1",
+    "electron-builder": "^26.18.0"
+  },
+  "build": {
+    "appId": "com.poshith.airframe",
+    "productName": "Airframe",
+    "directories": {
+      "output": "dist-installer"
+    },
+    "files": [
+      "main.js",
+      "preload-content.js",
+      "preload-ui.js",
+      "ui/**",
+      "assets/**",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "helper/AltHotkeys.exe",
+        "to": "AltHotkeys.exe"
+      }
+    ],
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "createDesktopShortcut": "always",
+      "createStartMenuShortcut": true,
+      "shortcutName": "Airframe",
+      "deleteAppDataOnUninstall": false,
+      "artifactName": "Airframe-Setup-${version}.exe"
+    }
   }
 }

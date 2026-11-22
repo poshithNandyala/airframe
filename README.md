@@ -4,11 +4,13 @@
 
 ### Watch while you work.
 
+**🪟 For Windows 10 & 11 (64-bit)**
+
 A quiet, floating YouTube window for Windows that stays on top, fades to any
 opacity, lets your clicks pass straight through, and hides itself from screen
 share, so you can keep a video going while you code, study, or sit in a meeting.
 
-**[⬇ Download for Windows](https://github.com/poshithNandyala/airframe/releases/latest)** ·
+**[⬇ Download Airframe-Setup.exe for Windows](https://github.com/poshithNandyala/airframe/releases/latest)** ·
 [Report a bug / ask for a feature](https://github.com/poshithNandyala/airframe/issues)
 
 <img src="docs/launcher.png" alt="Airframe launcher" width="820" />
@@ -41,17 +43,25 @@ part of your desktop:
 
 ---
 
-## Install
+## Install (Windows only)
+
+Airframe runs on **Windows 10 and Windows 11, 64-bit**. It does not run on
+macOS or Linux.
 
 1. Go to **[Releases](https://github.com/poshithNandyala/airframe/releases/latest)**
-   and download `Airframe-<version>-win-x64.zip`.
-2. Unzip it anywhere (for example `C:\Apps\Airframe`).
-3. Run **`Airframe.exe`**.
+   and download **`Airframe-Setup-<version>.exe`**.
+2. Double-click it. Airframe installs in a few seconds (no admin rights
+   needed) and opens.
+3. Next time, open it from the **Desktop** or **Start menu** shortcut.
 
 The app is not code-signed yet, so Windows SmartScreen may say *"Windows
 protected your PC"* the first time. Click **More info → Run anyway**.
 
-> Tip: right-click `Airframe.exe` → **Send to → Desktop (create shortcut)**.
+**Uninstall:** Settings → Apps → Installed apps → Airframe → Uninstall.
+
+**Prefer no installer?** Download `Airframe-<version>-win-x64.zip` instead,
+unzip it anywhere and run `Airframe.exe`. Both use the same sign-in and
+settings.
 
 ---
 
@@ -111,7 +121,7 @@ letting go will navigate. Swipe back before letting go to cancel.
 - **Remembered between launches:** position, size, always-on-top and the
   shield. Opacity starts at 93% every time; click-through always starts off.
 - **Sign-in** is stored in `%APPDATA%\Airframe`.
-- **Limits:** Windows 10/11 only. Rented movies and other DRM-only videos won't
+- **Limits:** Windows 10/11 (64-bit) only. Rented movies and other DRM-only videos won't
   play (Electron does not ship Widevine). YouTube changes its ads often, so a
   brand-new ad format may slip through until the filter is updated.
 - **Coming soon:** Prime Video, Netflix and Twitch screens.
@@ -141,7 +151,8 @@ git clone https://github.com/poshithNandyala/airframe.git
 cd airframe
 npm install
 npm start        # builds the hotkey helper, then runs the app
-npm run dist     # packages dist\Airframe-win32-x64\Airframe.exe
+npm run dist       # portable app: dist\Airframe-win32-x64\Airframe.exe
+npm run installer  # installer:    dist-installer\Airframe-Setup-<version>.exe
 ```
 
 | Path | What's inside |
