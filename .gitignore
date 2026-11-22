@@ -1,0 +1,16 @@
+# dependencies
+node_modules/
+
+# build output (the packaged app goes to GitHub Releases, not the repo)
+dist/
+*.zip
+helper/AltHotkeys.exe
+
+# logs and OS junk
+*.log
+npm-debug.log*
+Thumbs.db
+Desktop.ini
+.DS_Store
+.vscode/
+.idea/

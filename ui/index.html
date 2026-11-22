@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; style-src 'self'; img-src 'self' data:; script-src 'self';"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Airframe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="grip" aria-hidden="true"></div>
+
+    <main class="home" id="home">
+      <header class="masthead">
+        <div class="brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M8.4 6.1 18.4 12 8.4 17.9V6.1Z" fill="currentColor" />
+            </svg>
+          </span>
+          <div class="brand-text">
+            <span class="brand-name">Airframe</span>
+            <span class="brand-sub">A quiet window for what you watch</span>
+          </div>
+        </div>
+
+        <div class="status" aria-label="Window status">
+          <button
+            class="chip"
+            id="chip-protect"
+            type="button"
+            data-act="protect"
+            title="Screen-share shield — Alt+S"
+            aria-pressed="true"
+          >
+            <span class="dot" aria-hidden="true"></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3 19 6v5.2c0 4.4-2.9 8.1-7 9.8-4.1-1.7-7-5.4-7-9.8V6l7-3Z" />
+            </svg>
+            <span id="protect-label">Shield on</span>
+          </button>
+
+          <button
+            class="chip"
+            id="chip-top"
+            type="button"
+            data-act="topmost"
+            title="Always on top — Alt+T"
+            aria-pressed="true"
+          >
+            <span class="dot" aria-hidden="true"></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M9 4h6l-1.1 5.7 3.1 3.1V14H7v-1.2l3.1-3.1L9 4Z" />
+              <path d="M12 14v6" />
+            </svg>
+            <span id="top-label">Pinned</span>
+          </button>
+
+          <button
+            class="chip static"
+            id="opacity-chip"
+            type="button"
+            data-act="opacity-reset"
+            title="Opacity — Alt+Shift+Up/Right increases, Alt+Shift+Down/Left decreases · click to reset to 100%"
+          >
+            <span id="opacity-label">100%</span>
+          </button>
+
+          <button
+            class="chip"
+            id="chip-mute"
+            type="button"
+            data-act="mute"
+            title="Mute audio — Alt+M"
+            aria-pressed="false"
+          >
+            <span class="dot" aria-hidden="true"></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 9v6h4l5 4V5L8 9H4Z" />
+              <path d="M16.5 8.5a5 5 0 0 1 0 7" />
+            </svg>
+            <span id="mute-label">Sound</span>
+          </button>
+        </div>
+      </header>
+
+      <section class="intro">
+        <p class="eyebrow">One window · your screens</p>
+        <h1>Pick a screen<span class="period">.</span></h1>
+        <p class="lede">YouTube is ready. Everything else is on its way.</p>
+      </section>
+
+      <section class="screens" aria-label="Screens">
+        <button class="screen ready" id="open-youtube" type="button" aria-label="Open YouTube">
+          <span class="screen-icon youtube-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path d="M8.6 6.2 18.4 12 8.6 17.8V6.2Z" fill="currentColor" />
+            </svg>
+          </span>
+          <span class="screen-copy">
+            <span class="screen-name">YouTube</span>
+            <span class="screen-meta">Ready <span class="sep">·</span> ads filtered <span class="sep">·</span> stays signed in</span>
+          </span>
+          <span class="screen-go" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14" />
+              <path d="m13 6 6 6-6 6" />
+            </svg>
+          </span>
+        </button>
+
+        <div class="soon-row" aria-label="Coming soon">
+          <button class="screen small" type="button" data-coming="Prime Video">
+            <span class="screen-icon prime-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="8.5" />
+                <path d="M10.2 8.8 15.2 12l-5 3.2V8.8Z" fill="currentColor" stroke="none" />
+              </svg>
+            </span>
+            <span class="screen-copy">
+              <span class="screen-name">Prime Video</span>
+            </span>
+            <span class="tag">Soon</span>
+          </button>
+
+          <button class="screen small" type="button" data-coming="Netflix">
+            <span class="screen-icon netflix-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 20V4l10 16V4" />
+              </svg>
+            </span>
+            <span class="screen-copy">
+              <span class="screen-name">Netflix</span>
+            </span>
+            <span class="tag">Soon</span>
+          </button>
+
+          <button class="screen small" type="button" data-coming="Twitch">
+            <span class="screen-icon twitch-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 5h15v8.6l-3.7 3.7h-3.5L9.5 20v-2.7H4.5V5Z" />
+                <path d="M11 9v3.4M15.3 9v3.4" />
+              </svg>
+            </span>
+            <span class="screen-copy">
+              <span class="screen-name">Twitch</span>
+            </span>
+            <span class="tag">Soon</span>
+          </button>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <div class="foot-copy">
+          <p class="tip"><span id="app-version">Airframe</span> <span>·</span> Drag the very top edge to move <span>·</span> resize from any edge</p>
+          <div class="keys" aria-label="Keyboard shortcuts">
+          <span class="key"><kbd>Alt</kbd><kbd>H</kbd><em>hide</em></span>
+          <span class="key"><kbd>Alt</kbd><kbd>←↑↓→</kbd><em>move</em></span>
+          <span class="key"><kbd>Alt</kbd><kbd>Shift</kbd><kbd>←↑↓→</kbd><em>opacity</em></span>
+          <span class="key"><kbd>Alt</kbd><kbd>F</kbd><em>fullscreen</em></span>
+          <span class="key"><kbd>Alt</kbd><kbd>L</kbd><em>click-through</em></span>
+          <span class="key"><kbd>Alt</kbd><kbd>B</kbd><em>launcher</em></span>
+          <span class="key"><kbd>Alt</kbd><kbd>Q</kbd><em>quit</em></span>
+        </div>
+        </div>
+
+        <div class="foot-actions">
+          <button class="screen-swap" id="next-screen" type="button" data-act="next-display" title="Move to the next screen / recenter — Alt+Shift+D" aria-label="Move to the next screen or recenter">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="3" y="5" width="13" height="9" rx="1.5" />
+              <path d="M7 18h5" />
+              <path d="M9.5 14v4" />
+              <rect x="15.5" y="9" width="5.5" height="8" rx="1.2" />
+            </svg>
+          </button>
+
+          <button class="quit" id="quit" type="button" title="Quit Airframe — Alt+Q" aria-label="Quit Airframe">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M12 3v8" />
+              <path d="M6.4 6.8a8 8 0 1 0 11.2 0" />
+            </svg>
+          </button>
+        </div>
+      </footer>
+    </main>
+
+    <div class="ghost-banner" id="ghost-banner" role="status">
+      Click-through is on <span class="ghost-hint"><kbd>Alt</kbd><kbd>L</kbd> / <kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>L</kbd> to turn off</span>
+    </div>
+
+    <div class="loading" id="loading" hidden>
+      <div class="loading-inner">
+        <div class="loader" aria-hidden="true">
+          <span class="loader-mark">
+            <svg viewBox="0 0 24 24"><path d="M8.4 6.1 18.4 12 8.4 17.9V6.1Z" fill="currentColor" /></svg>
+          </span>
+        </div>
+        <p class="loading-title" id="loading-title">Opening YouTube</p>
+        <p class="loading-sub" id="loading-sub">Getting your screen ready…</p>
+      </div>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

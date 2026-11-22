@@ -1,0 +1,26 @@
+{
+  "name": "airframe",
+  "productName": "Airframe",
+  "version": "1.5.0",
+  "description": "A quiet floating screen for YouTube - launcher, opacity, click-through and screen-share privacy.",
+  "main": "main.js",
+  "author": "Poshith Nandyala",
+  "homepage": "https://github.com/poshithNandyala/airframe",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poshithNandyala/airframe.git"
+  },
+  "bugs": "https://github.com/poshithNandyala/airframe/issues",
+  "license": "MIT",
+  "scripts": {
+    "prestart": "npm run helper",
+    "helper": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-helper.ps1",
+    "start": "electron .",
+    "smoke": "electron . --smoke",
+    "dist": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/build-dist.ps1"
+  },
+  "devDependencies": {
+    "@electron/packager": "^20.3.0",
+    "electron": "^45.4.1"
+  }
+}
