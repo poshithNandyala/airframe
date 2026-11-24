@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>How to Make a Window Click-Through on Windows 10/11</title>
+  <meta name="description" content="Make a floating video or overlay click-through so your clicks reach the app behind it. Airframe's Alt+L, how it works, and what to check when it doesn't." />
+  <meta name="author" content="Poshith Nandyala" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#08080a" />
+  <link rel="canonical" href="https://poshithnandyala.github.io/airframe/make-window-click-through-windows/" />
+  <link rel="icon" href="../icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Airframe" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="How to Make a Window Click-Through on Windows 10/11" />
+  <meta property="og:description" content="Make a floating video or overlay click-through so your clicks reach the app behind it. Airframe's Alt+L, how it works, and what to check when it doesn't." />
+  <meta property="og:url" content="https://poshithnandyala.github.io/airframe/make-window-click-through-windows/" />
+  <meta property="og:image" content="https://poshithnandyala.github.io/airframe/og.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Airframe, a floating always-on-top YouTube player for Windows 10 and 11." />
+  <meta property="article:published_time" content="2026-11-25T00:00:00+00:00" />
+  <meta property="article:modified_time" content="2026-11-25T00:00:00+00:00" />
+  <meta property="article:author" content="Poshith Nandyala" />
+  <meta property="article:section" content="Guides" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="How to Make a Window Click-Through on Windows 10/11" />
+  <meta name="twitter:description" content="Make a floating video or overlay click-through so your clicks reach the app behind it. Airframe's Alt+L, how it works, and what to check when it doesn't." />
+  <meta name="twitter:image" content="https://poshithnandyala.github.io/airframe/og.png" />
+  <meta name="twitter:image:alt" content="Airframe, a floating always-on-top YouTube player for Windows 10 and 11." />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://poshithnandyala.github.io/airframe/make-window-click-through-windows/#article",
+      "headline": "How to make a window click-through on Windows",
+      "description": "Make a floating video or overlay click-through so your clicks reach the app behind it. Airframe's Alt+L, how it works, and what to check when it doesn't.",
+      "image": "https://poshithnandyala.github.io/airframe/og.png",
+      "url": "https://poshithnandyala.github.io/airframe/make-window-click-through-windows/",
+      "datePublished": "2026-11-25T00:00:00+00:00",
+      "dateModified": "2026-11-25T00:00:00+00:00",
+      "inLanguage": "en",
+      "articleSection": "Guides",
+      "keywords": "make window click through windows, click through window windows 11, click through overlay windows, transparent click through window, ws_ex_transparent, setignoremouseevents",
+      "wordCount": 781,
+      "author": {
+        "@type": "Person",
+        "name": "Poshith Nandyala",
+        "url": "https://github.com/poshithNandyala"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Airframe",
+        "url": "https://poshithnandyala.github.io/airframe/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://poshithnandyala.github.io/airframe/icon.png"
+        }
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://poshithnandyala.github.io/airframe/#website",
+        "name": "Airframe",
+        "url": "https://poshithnandyala.github.io/airframe/"
+      },
+      "about": {
+        "@type": "SoftwareApplication",
+        "name": "Airframe",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "url": "https://poshithnandyala.github.io/airframe/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://poshithnandyala.github.io/airframe/make-window-click-through-windows/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://poshithnandyala.github.io/airframe/make-window-click-through-windows/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Airframe",
+          "item": "https://poshithnandyala.github.io/airframe/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://poshithnandyala.github.io/airframe/#guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Click-through",
+          "item": "https://poshithnandyala.github.io/airframe/make-window-click-through-windows/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://poshithnandyala.github.io/airframe/make-window-click-through-windows/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Alt+L do in Airframe?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It toggles click-through. When it is on, pointer input goes to the top window behind Airframe. When it is off, the video window receives clicks again. A toast confirms the change."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I still control the video while click-through is on?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not with the mouse. Use the global shortcuts for play, opacity, hide and show, or press Alt+L to turn click-through off and use the YouTube controls."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is click-through the same as transparency?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Opacity changes how visible the window is. Click-through changes where mouse input goes. Airframe lets you use either one independently, and at 0% opacity the window is both invisible and click-through."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does click-through work with games?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It works best with games in borderless windowed mode. Some games use raw input or exclusive fullscreen and may not receive the forwarded pointer input. Test with the specific game."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does the click-through target the wrong window?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Airframe targets the top window behind it. Bring the app you want to use to the front before pressing Alt+L. If an elevated app or UAC prompt is involved, Windows may block input from reaching it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is there a built-in Windows setting for click-through?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. Windows exposes it to developers through extended window styles. End users normally need an app such as Airframe, a window utility, or a script."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body class="article-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8.4 6.1 18.4 12 8.4 17.9V6.1Z" fill="currentColor"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  </svg>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../" aria-label="Airframe home">
+        <span class="brand-mark"><svg class="icon"><use href="#i-play"/></svg></span>
+        <span class="brand-name">Airframe</span>
+        <span class="brand-version">v<span data-version>1.5.0</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="../#features">Features</a>
+        <a href="../#screens">Screens</a>
+        <a href="../#shortcuts">Shortcuts</a>
+        <a href="../#guides">Guides</a>
+        <a href="../#download">Download</a>
+        <a href="../#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="icon-link" href="https://github.com/poshithNandyala/airframe" target="_blank" rel="noopener" aria-label="Airframe on GitHub">
+          <svg class="icon"><use href="#i-github"/></svg>
+        </a>
+        <a class="btn btn-primary btn-small" href="https://github.com/poshithNandyala/airframe/releases/download/v1.5.0/Airframe-Setup-1.5.0.exe" download data-download="installer">
+          <svg class="icon"><use href="#i-download"/></svg>
+          <span>Download</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="article">
+      <div class="container article-container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../">Airframe</a>
+          <span aria-hidden="true">/</span>
+          <a href="../#guides">Guides</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Click-through</span>
+        </nav>
+
+        <header class="article-head">
+          <p class="eyebrow">Windows guide</p>
+          <h1>How to make a window click-through on Windows</h1>
+          <p class="article-lede">A floating video should not block the app underneath it. This is how click-through works on Windows, how to use it in Airframe, and what to do when a window refuses to cooperate.</p>
+          <div class="article-meta">
+            <span>By <a href="https://github.com/poshithNandyala" rel="author">Poshith Nandyala</a></span>
+            <span>Updated <time datetime="2026-11-25">November 25, 2026</time></span>
+            <span>4 min read</span>
+          </div>
+        </header>
+
+        <div class="quick-answer">
+          <span class="quick-label">Short answer</span>
+          <p>Bring the app you want to use to the front, then press Alt+L in Airframe. The video becomes click-through: clicks, scrolling, dragging and hover go to the window behind it. Press Alt+L again to take the video window back.</p>
+        </div>
+
+        <div class="article-body">
+        <p>A floating video is only useful if it does not become a wall between you and your work. Click-through fixes that: the video stays visible, but your mouse acts on the window underneath it. Windows can do this, but there is no checkbox for it. It is a window-style trick, and the implementation details matter.</p>
+
+        <h2 id="what-it-means">What click-through actually means</h2>
+
+        <p>Normally, the topmost window under your pointer receives the click. Click-through tells Windows to skip that window for hit-testing, so the click goes to the next eligible window below. Scrolling, dragging and hover can follow the same path.</p>
+
+        <p>It is separate from transparency. A window can be fully opaque and click-through, or fully transparent and still capture clicks. Airframe exposes both controls independently because they solve different problems.</p>
+
+        <h2 id="airframe">How Airframe does it</h2>
+
+        <p>Airframe's display mode is toggled with <kbd>Alt</kbd><kbd>L</kbd>. The flow is deliberately simple:</p>
+
+        <ol class="steps">
+          <li><strong>Bring the app you want to use to the front.</strong> Airframe targets the top window behind it, so the order matters.</li>
+          <li><strong>Press <kbd>Alt</kbd><kbd>L</kbd>.</strong> A toast names the target window.</li>
+          <li><strong>Work through the video.</strong> Clicks, wheel, drag and hover reach the target. The video keeps playing.</li>
+          <li><strong>Press <kbd>Alt</kbd><kbd>L</kbd> again.</strong> The video window takes mouse input back.</li>
+        </ol>
+
+        <p>Under the hood, Airframe uses Electron's <code>setIgnoreMouseEvents</code> and re-asserts the state after display changes or taskbar interaction. It also disables Chromium's DirectComposition path for its top-level window. That detail matters for WinUI 3 and WebView2 apps: a Chromium window created with <code>WS_EX_NOREDIRECTIONBITMAP</code> can refuse to route pointer input through, even when the transparent style is set. The classic redirection surface makes click-through work with those apps.</p>
+
+        <h2 id="windows-api">How Windows click-through works for developers</h2>
+
+        <p>At the Win32 level, the usual combination is two extended window styles:</p>
+
+        <ul>
+          <li><code>WS_EX_TRANSPARENT</code> (<code>0x00000020</code>) makes the window transparent to hit-testing.</li>
+          <li><code>WS_EX_LAYERED</code> (<code>0x00080000</code>) is often required for the effect to behave consistently, especially with per-pixel alpha.</li>
+        </ul>
+
+        <p>An AutoHotkey toggle for the active window looks like this:</p>
+
+        <pre><code>; AutoHotkey v1 - toggle WS_EX_TRANSPARENT on the active window
+F8::
+  WinGet, activeId, ID, A
+  WinSet, ExStyle, ^0x20, ahk_id %activeId%
+return</code></pre>
+
+        <p>The <code>^</code> XORs the style, so the same hotkey turns it back off. Keep that undo path in mind: once a window is click-through, you may not be able to click its own close button. A global hotkey still works.</p>
+
+        <p>In Electron, the equivalent is:</p>
+
+        <pre><code>win.setIgnoreMouseEvents(true, { forward: true });</code></pre>
+
+        <p>The <code>forward</code> option forwards mouse move messages so hover effects can still work. It does not forward clicks; those go to the window below.</p>
+
+        <h2 id="setup">Set up click-through in Airframe</h2>
+
+        <ol class="steps">
+          <li>Open YouTube in Airframe and start the video.</li>
+          <li>Open the app you want to work in and click its title bar so it is the front window.</li>
+          <li>Press <kbd>Alt</kbd><kbd>L</kbd>. The toast should name that app.</li>
+          <li>Click, scroll and drag through the video. If the target is correct, the app responds.</li>
+          <li>Press <kbd>Alt</kbd><kbd>L</kbd> to reclaim the video, or use the global shortcuts to control playback.</li>
+        </ol>
+
+        <p>At 0% opacity, the window is invisible and click-through automatically. <kbd>Alt</kbd><kbd>Shift</kbd><kbd>&uarr;</kbd> brings it back. That combination is useful for audio-only playback or a video you only want to hear.</p>
+
+        <h2 id="troubleshooting">When click-through does not work</h2>
+
+        <ul>
+          <li><strong>The target app is elevated.</strong> A normal-privilege app generally cannot send input to an administrator window. Run both at the same level if you control them.</li>
+          <li><strong>A UAC prompt is open.</strong> The secure desktop is above everything and is not a normal click-through target.</li>
+          <li><strong>The game is exclusive fullscreen.</strong> Use borderless windowed mode.</li>
+          <li><strong>Another topmost window is above the target.</strong> Close or unpin it, then bring the target forward again.</li>
+          <li><strong>The target is minimized.</strong> Restore it before toggling.</li>
+          <li><strong>The app uses raw input.</strong> Some games and drawing apps read the device directly and ignore synthesized or forwarded pointer messages.</li>
+          <li><strong>A shortcut conflict.</strong> Another app may be capturing <kbd>Alt</kbd><kbd>L</kbd>. Close it or use <kbd>Ctrl</kbd><kbd>Alt</kbd><kbd>L</kbd>, which Airframe also accepts.</li>
+        </ul>
+
+        <h2 id="uses">What click-through is good for</h2>
+
+        <ul>
+          <li><strong>Tutorials over an editor.</strong> Follow along in Photoshop, Premiere or VS Code without moving the video.</li>
+          <li><strong>Reference video over a document.</strong> Keep a talk or demo visible while you take notes.</li>
+          <li><strong>Music video as a desktop element.</strong> Fade it, click through it, and forget it is a window.</li>
+          <li><strong>Borderless games.</strong> Keep a guide or stream visible while the game receives your input.</li>
+          <li><strong>Presenting.</strong> Keep a clip visible while you drive the app behind it.</li>
+        </ul>
+
+        <h2 id="bottom-line">The bottom line</h2>
+
+        <p>Click-through is the feature that turns a floating video from an obstacle into part of the desktop. Airframe gives it a global shortcut and handles the Chromium/WinUI edge cases that make naive implementations fail. Bring the target forward, press <kbd>Alt</kbd><kbd>L</kbd>, and work through the video.</p>
+
+        <p><a class="inline-cta" href="../#download">Download Airframe for Windows <span aria-hidden="true">&rarr;</span></a></p>
+        </div>
+
+        <section class="article-section" id="faq">
+          <h2>Frequently asked questions</h2>
+          <div class="article-faq">
+            <details>
+              <summary>What does Alt+L do in Airframe?</summary>
+              <p>It toggles click-through. When it is on, pointer input goes to the top window behind Airframe. When it is off, the video window receives clicks again. A toast confirms the change.</p>
+            </details>
+            <details>
+              <summary>Can I still control the video while click-through is on?</summary>
+              <p>Not with the mouse. Use the global shortcuts for play, opacity, hide and show, or press Alt+L to turn click-through off and use the YouTube controls.</p>
+            </details>
+            <details>
+              <summary>Is click-through the same as transparency?</summary>
+              <p>No. Opacity changes how visible the window is. Click-through changes where mouse input goes. Airframe lets you use either one independently, and at 0% opacity the window is both invisible and click-through.</p>
+            </details>
+            <details>
+              <summary>Does click-through work with games?</summary>
+              <p>It works best with games in borderless windowed mode. Some games use raw input or exclusive fullscreen and may not receive the forwarded pointer input. Test with the specific game.</p>
+            </details>
+            <details>
+              <summary>Why does the click-through target the wrong window?</summary>
+              <p>Airframe targets the top window behind it. Bring the app you want to use to the front before pressing Alt+L. If an elevated app or UAC prompt is involved, Windows may block input from reaching it.</p>
+            </details>
+            <details>
+              <summary>Is there a built-in Windows setting for click-through?</summary>
+              <p>No. Windows exposes it to developers through extended window styles. End users normally need an app such as Airframe, a window utility, or a script.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources</h2>
+          <ul>
+          <li><a href="https://learn.microsoft.com/en-us/windows/win32/winmsg/extended-window-styles" target="_blank" rel="noopener">Microsoft: Extended window styles (WS_EX_TRANSPARENT)</a></li>
+          <li><a href="https://www.electronjs.org/docs/latest/api/browser-window#winsetignoremouseeventsignore-options" target="_blank" rel="noopener">Electron: BrowserWindow setIgnoreMouseEvents</a></li>
+          </ul>
+        </section>
+
+        <aside class="article-cta">
+          <p class="eyebrow">Try it</p>
+          <h2>Float YouTube over your work.</h2>
+          <p>Free and open source for Windows 10 and 11. Installer or portable ZIP, no account and no telemetry.</p>
+          <div class="article-cta-actions">
+            <a class="btn btn-primary" href="https://github.com/poshithNandyala/airframe/releases/download/v1.5.0/Airframe-Setup-1.5.0.exe" download data-download="installer">
+              <svg class="icon"><use href="#i-download"/></svg>
+              <span>Download for Windows</span>
+            </a>
+            <a class="btn btn-ghost" href="../#download">Installer &amp; portable ZIP</a>
+          </div>
+          <p class="article-cta-fine">v1.5.0 &middot; Windows 10/11 x64 &middot; MIT licensed</p>
+        </aside>
+
+        <div class="author-box">
+          <img src="../icon.png" width="52" height="52" alt="" loading="lazy" />
+          <div>
+            <strong>Poshith Nandyala</strong>
+            <p>I build Airframe, a free floating YouTube player for Windows. These guides cover the window tricks behind it and the setups that actually work.</p>
+            <a href="https://github.com/poshithNandyala" target="_blank" rel="noopener">GitHub profile</a>
+          </div>
+        </div>
+
+        <nav class="related" aria-labelledby="related-title">
+          <h2 id="related-title">Related guides</h2>
+          <div class="related-grid">
+          <a class="related-card" href="../always-on-top-youtube-player/">
+            <span class="related-kicker">Guide</span>
+            <strong>Always-on-top YouTube player for Windows</strong>
+            <span>Keep YouTube above every other window on Windows 10 and 11.</span>
+          </a>
+          <a class="related-card" href="../picture-in-picture-alternative/">
+            <span class="related-kicker">Guide</span>
+            <strong>A better picture-in-picture alternative for Windows</strong>
+            <span>Why browser PiP feels limited, and what to use instead on Windows.</span>
+          </a>
+          <a class="related-card" href="../watch-youtube-while-gaming/">
+            <span class="related-kicker">Guide</span>
+            <strong>How to watch YouTube while gaming on Windows</strong>
+            <span>Borderless setup, performance tips and capture privacy for a single screen.</span>
+          </a>
+          <a class="related-card" href="../best-floating-youtube-player-windows/">
+            <span class="related-kicker">Guide</span>
+            <strong>Best floating YouTube player for Windows</strong>
+            <span>Airframe vs browser PiP, PowerToys, WindowTop and other floating players.</span>
+          </a>
+          </div>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../" aria-label="Airframe home">
+          <span class="brand-mark"><svg class="icon"><use href="#i-play"/></svg></span>
+          <span class="brand-name">Airframe</span>
+        </a>
+        <p>A quiet floating screen for YouTube on Windows 10/11.</p>
+        <span class="footer-version">v<span data-version>1.5.0</span> &middot; MIT</span>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <a href="../#features">Features</a>
+        <a href="../#screens">Screens</a>
+        <a href="../#shortcuts">Shortcuts</a>
+        <a href="../#download">Download</a>
+        <a href="../#faq">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Guides</h4>
+        <a href="../always-on-top-youtube-player/">Always on top</a>
+        <a href="../watch-youtube-while-working/">Watch while working</a>
+        <a href="../picture-in-picture-alternative/">PiP alternative</a>
+        <a href="../hide-window-from-screen-share/">Screen-share privacy</a>
+        <a href="../make-window-click-through-windows/">Click-through</a>
+      </div>
+
+      <div>
+        <h4>GitHub</h4>
+        <a href="https://github.com/poshithNandyala" target="_blank" rel="noopener">Poshith Nandyala</a>
+        <a href="https://github.com/poshithNandyala/airframe" target="_blank" rel="noopener">Source</a>
+        <a href="https://github.com/poshithNandyala/airframe/releases" target="_blank" rel="noopener">Releases</a>
+        <a href="https://github.com/poshithNandyala/airframe/issues" target="_blank" rel="noopener">Issues</a>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <a href="https://github.com/poshithNandyala/airframe/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+        <a href="https://github.com/poshithNandyala/airframe/releases/tag/v1.5.0" target="_blank" rel="noopener">Release notes</a>
+        <p class="footer-fine">Airframe is an independent project. Not affiliated with YouTube, Google, Amazon, Netflix, Twitch or Microsoft. All product names are trademarks of their respective owners.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Poshith Nandyala. Made for Windows 10 &amp; 11.</p>
+      <a href="#top">Back to top <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../site.js"></script>
+</body>
+</html>

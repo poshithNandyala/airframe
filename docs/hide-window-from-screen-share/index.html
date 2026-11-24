@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hide a Window From Screen Share on Windows | Airframe</title>
+  <meta name="description" content="Keep YouTube or any app out of Teams, Zoom, Meet and OBS shares on Windows 10/11. How display affinity works, what it can't hide, and how to set it up." />
+  <meta name="author" content="Poshith Nandyala" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#08080a" />
+  <link rel="canonical" href="https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/" />
+  <link rel="icon" href="../icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Airframe" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Hide a Window From Screen Share on Windows | Airframe" />
+  <meta property="og:description" content="Keep YouTube or any app out of Teams, Zoom, Meet and OBS shares on Windows 10/11. How display affinity works, what it can't hide, and how to set it up." />
+  <meta property="og:url" content="https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/" />
+  <meta property="og:image" content="https://poshithnandyala.github.io/airframe/og.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Airframe, a floating always-on-top YouTube player for Windows 10 and 11." />
+  <meta property="article:published_time" content="2026-11-25T00:00:00+00:00" />
+  <meta property="article:modified_time" content="2026-11-25T00:00:00+00:00" />
+  <meta property="article:author" content="Poshith Nandyala" />
+  <meta property="article:section" content="Guides" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hide a Window From Screen Share on Windows | Airframe" />
+  <meta name="twitter:description" content="Keep YouTube or any app out of Teams, Zoom, Meet and OBS shares on Windows 10/11. How display affinity works, what it can't hide, and how to set it up." />
+  <meta name="twitter:image" content="https://poshithnandyala.github.io/airframe/og.png" />
+  <meta name="twitter:image:alt" content="Airframe, a floating always-on-top YouTube player for Windows 10 and 11." />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/#article",
+      "headline": "How to hide a window from screen share on Windows",
+      "description": "Keep YouTube or any app out of Teams, Zoom, Meet and OBS shares on Windows 10/11. How display affinity works, what it can't hide, and how to set it up.",
+      "image": "https://poshithnandyala.github.io/airframe/og.png",
+      "url": "https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/",
+      "datePublished": "2026-11-25T00:00:00+00:00",
+      "dateModified": "2026-11-25T00:00:00+00:00",
+      "inLanguage": "en",
+      "articleSection": "Guides",
+      "keywords": "hide window from screen share, hide window from screen share windows, hide youtube from screen share, hide app from teams screen share, screen share privacy windows, wda_excludefromcapture",
+      "wordCount": 857,
+      "author": {
+        "@type": "Person",
+        "name": "Poshith Nandyala",
+        "url": "https://github.com/poshithNandyala"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Airframe",
+        "url": "https://poshithnandyala.github.io/airframe/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://poshithnandyala.github.io/airframe/icon.png"
+        }
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://poshithnandyala.github.io/airframe/#website",
+        "name": "Airframe",
+        "url": "https://poshithnandyala.github.io/airframe/"
+      },
+      "about": {
+        "@type": "SoftwareApplication",
+        "name": "Airframe",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "url": "https://poshithnandyala.github.io/airframe/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Airframe",
+          "item": "https://poshithnandyala.github.io/airframe/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://poshithnandyala.github.io/airframe/#guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Screen-share privacy",
+          "item": "https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does Airframe hide YouTube from screen share?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, in most standard capture paths. The shield uses Windows display affinity and is on by default. Teams, Zoom, Meet, OBS and most screenshot tools respect it. Test with your specific tool before relying on it in a meeting."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does the shield hide the window from screenshots?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most screenshots taken through the normal Windows desktop compositor exclude the window or show it as black. Kernel-level capture tools, external capture hardware and a phone camera are not covered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the screen-share shield on by default?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Airframe starts with the shield enabled. Alt+S toggles it, and a toast confirms the new state."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can viewers tell that a window is hidden?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "They may see a black rectangle, an empty space, or nothing at all, depending on the capture tool. The goal is privacy, not invisibility magic. If a clean share matters, share a single app window instead of the entire desktop."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work on Windows 10?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. The strongest exclusion uses WDA_EXCLUDEFROMCAPTURE, which requires Windows 10 version 2004 or newer. Windows 11 supports it. Older Windows 10 builds may fall back to a different protection mode."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it hide my whole desktop?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No. It only affects the Airframe window. Other apps, notifications and browser tabs remain visible in a full-screen share."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body class="article-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8.4 6.1 18.4 12 8.4 17.9V6.1Z" fill="currentColor"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  </svg>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../" aria-label="Airframe home">
+        <span class="brand-mark"><svg class="icon"><use href="#i-play"/></svg></span>
+        <span class="brand-name">Airframe</span>
+        <span class="brand-version">v<span data-version>1.5.0</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="../#features">Features</a>
+        <a href="../#screens">Screens</a>
+        <a href="../#shortcuts">Shortcuts</a>
+        <a href="../#guides">Guides</a>
+        <a href="../#download">Download</a>
+        <a href="../#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="icon-link" href="https://github.com/poshithNandyala/airframe" target="_blank" rel="noopener" aria-label="Airframe on GitHub">
+          <svg class="icon"><use href="#i-github"/></svg>
+        </a>
+        <a class="btn btn-primary btn-small" href="https://github.com/poshithNandyala/airframe/releases/download/v1.5.0/Airframe-Setup-1.5.0.exe" download data-download="installer">
+          <svg class="icon"><use href="#i-download"/></svg>
+          <span>Download</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="article">
+      <div class="container article-container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../">Airframe</a>
+          <span aria-hidden="true">/</span>
+          <a href="../#guides">Guides</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Screen-share privacy</span>
+        </nav>
+
+        <header class="article-head">
+          <p class="eyebrow">Privacy guide</p>
+          <h1>How to hide a window from screen share on Windows</h1>
+          <p class="article-lede">Windows can exclude a window from capture without hiding it from you. Here is how the shield works, which apps respect it, and where the limits are.</p>
+          <div class="article-meta">
+            <span>By <a href="https://github.com/poshithNandyala" rel="author">Poshith Nandyala</a></span>
+            <span>Updated <time datetime="2026-11-25">November 25, 2026</time></span>
+            <span>4 min read</span>
+          </div>
+        </header>
+
+        <div class="quick-answer">
+          <span class="quick-label">Short answer</span>
+          <p>On Windows 10 (2004 or newer) and Windows 11, an app can ask Windows to exclude its window from screen capture. Airframe does this by default. Press Alt+S to toggle the shield. It works with most standard capture tools, but not with a camera pointed at your screen or external capture hardware.</p>
+        </div>
+
+        <div class="article-body">
+        <p>Sharing your screen should not mean sharing everything on it. A YouTube video, a personal message, a half-finished document or a tab you forgot about can end up in a client call or a recorded demo. Windows has a mechanism for this, and Airframe exposes it as a one-key shield.</p>
+
+        <h2 id="how-it-works">How Windows screen sharing sees your screen</h2>
+
+        <p>Most Windows capture tools do not read the physical display directly. They ask the Desktop Window Manager (DWM) for a composed image, or they capture a specific window through the Windows Graphics Capture API. Windows lets an app mark its own window with a <em>display affinity</em> value that tells DWM how the window should appear to those capture paths.</p>
+
+        <p>The relevant API is <a href="https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity" target="_blank" rel="noopener"><code>SetWindowDisplayAffinity</code></a>. The strongest option, <code>WDA_EXCLUDEFROMCAPTURE</code>, makes the window invisible to capture while it remains visible on the physical display. Electron wraps this as <a href="https://www.electronjs.org/docs/latest/api/browser-window#winsetcontentprotectionenable-windows-macos" target="_blank" rel="noopener"><code>win.setContentProtection(true)</code></a>, which is what Airframe calls.</p>
+
+        <p>In practice, a captured desktop often shows a black rectangle where the protected window sits. Some tools crop it out or show the desktop behind it. The exact result depends on the capture API and the app doing the capturing.</p>
+
+        <h2 id="airframe-shield">What Airframe's screen-share shield does</h2>
+
+        <ul>
+          <li><strong>On by default.</strong> You do not have to enable it before a call.</li>
+          <li><strong>Toggles with <kbd>Alt</kbd><kbd>S</kbd>.</strong> A toast confirms whether the shield is on or off.</li>
+          <li><strong>Protects the Airframe window only.</strong> It does not hide your other apps, notifications or desktop.</li>
+          <li><strong>Keeps the video visible to you.</strong> The window is excluded from capture, not from your own display.</li>
+          <li><strong>Works alongside click-through and opacity.</strong> You can fade the video and still keep it out of a share.</li>
+        </ul>
+
+        <h2 id="hide-youtube">Hide YouTube during a Teams, Zoom or Meet call</h2>
+
+        <ol class="steps">
+          <li><strong>Open the video in Airframe.</strong> Start playback before you join the call so you can confirm the window looks right.</li>
+          <li><strong>Check the shield.</strong> Press <kbd>Alt</kbd><kbd>S</kbd> if you are unsure. The toast should say the shield is on.</li>
+          <li><strong>Join and share.</strong> Choose the screen or window you normally share.</li>
+          <li><strong>Verify.</strong> Ask a colleague, start a solo meeting, or make a local recording. Confirm the video is absent or black in the capture.</li>
+          <li><strong>If it still appears, share a single window.</strong> Sharing one app window is more predictable than sharing the entire desktop. The video is less likely to be included at all.</li>
+        </ol>
+
+        <p>If the meeting is recorded, the recording follows the same capture path as the live share. Test the recording if the distinction matters.</p>
+
+        <h2 id="obs">Does it work with OBS?</h2>
+
+        <p>OBS Display Capture normally respects Windows display affinity, so the Airframe window is excluded. OBS Window Capture of the Airframe window may show black. OBS Game Capture only captures the game, so the video is not included in the first place.</p>
+
+        <p>If you want viewers to see the video, turn the shield off with <kbd>Alt</kbd><kbd>S</kbd> and capture the window or display normally. If you want it hidden, leave the shield on and use Display Capture for the rest of the desktop.</p>
+
+        <h2 id="limits">What the shield cannot hide</h2>
+
+        <p>Display affinity is a Windows compositor feature. Anything that bypasses the compositor is outside its scope:</p>
+
+        <ul>
+          <li><strong>A camera pointed at your screen.</strong> No software can hide from that.</li>
+          <li><strong>External capture hardware.</strong> An HDMI capture card or a second PC sees the physical output.</li>
+          <li><strong>Some remote-support and forensic tools.</strong> Kernel-level capture or a tool running with higher privileges may not honor the flag.</li>
+          <li><strong>The UAC secure desktop.</strong> Windows draws it separately, above normal windows.</li>
+          <li><strong>Older Windows 10 builds.</strong> The strongest exclusion needs Windows 10 version 2004 or newer.</li>
+          <li><strong>Someone looking over your shoulder.</strong> Privacy from capture is not privacy from the room.</li>
+        </ul>
+
+        <p>It also does not hide the fact that you are running an app. A viewer may see a black rectangle and ask about it. If you need a completely clean desktop, close or move the sensitive content before sharing.</p>
+
+        <h2 id="other-options">Other ways to keep a window out of a share</h2>
+
+        <ul>
+          <li><strong>Share one app window.</strong> The most reliable option, and it avoids notifications and other tabs.</li>
+          <li><strong>Move the window to another monitor.</strong> This works only if you share a single display and the tool respects that choice.</li>
+          <li><strong>Use a second desktop.</strong> Virtual desktops help with organization, but sharing the desktop you are on can still include it.</li>
+          <li><strong>Close what you do not need.</strong> The oldest privacy control is still the best one.</li>
+        </ul>
+
+        <h2 id="privacy">Use it for privacy, not for deception</h2>
+
+        <p>The shield is useful for personal content during work calls: a video in the background, a private message, a document that is not ready to share. It is not a way to misrepresent what you are doing, and it does not override your employer's screen-sharing or recording policies. Use it the way you would use a privacy screen or a closed door.</p>
+
+        <h2 id="bottom-line">The bottom line</h2>
+
+        <p>Windows can exclude a window from screen capture, and Airframe turns that into a default-on shield with a single shortcut. It covers the common tools &mdash; Teams, Zoom, Meet, OBS and most screenshots &mdash; but it is not undetectable and it cannot beat a camera. Test your exact setup once, then stop worrying about the video in the corner.</p>
+
+        <p><a class="inline-cta" href="../#download">Download Airframe with the shield on <span aria-hidden="true">&rarr;</span></a></p>
+        </div>
+
+        <section class="article-section" id="faq">
+          <h2>Frequently asked questions</h2>
+          <div class="article-faq">
+            <details>
+              <summary>Does Airframe hide YouTube from screen share?</summary>
+              <p>Yes, in most standard capture paths. The shield uses Windows display affinity and is on by default. Teams, Zoom, Meet, OBS and most screenshot tools respect it. Test with your specific tool before relying on it in a meeting.</p>
+            </details>
+            <details>
+              <summary>Does the shield hide the window from screenshots?</summary>
+              <p>Most screenshots taken through the normal Windows desktop compositor exclude the window or show it as black. Kernel-level capture tools, external capture hardware and a phone camera are not covered.</p>
+            </details>
+            <details>
+              <summary>Is the screen-share shield on by default?</summary>
+              <p>Yes. Airframe starts with the shield enabled. Alt+S toggles it, and a toast confirms the new state.</p>
+            </details>
+            <details>
+              <summary>Can viewers tell that a window is hidden?</summary>
+              <p>They may see a black rectangle, an empty space, or nothing at all, depending on the capture tool. The goal is privacy, not invisibility magic. If a clean share matters, share a single app window instead of the entire desktop.</p>
+            </details>
+            <details>
+              <summary>Does it work on Windows 10?</summary>
+              <p>Yes. The strongest exclusion uses WDA_EXCLUDEFROMCAPTURE, which requires Windows 10 version 2004 or newer. Windows 11 supports it. Older Windows 10 builds may fall back to a different protection mode.</p>
+            </details>
+            <details>
+              <summary>Does it hide my whole desktop?</summary>
+              <p>No. It only affects the Airframe window. Other apps, notifications and browser tabs remain visible in a full-screen share.</p>
+            </details>
+          </div>
+        </section>
+
+        <section class="article-sources">
+          <h2>Sources</h2>
+          <ul>
+          <li><a href="https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-setwindowdisplayaffinity" target="_blank" rel="noopener">Microsoft: SetWindowDisplayAffinity</a></li>
+          <li><a href="https://www.electronjs.org/docs/latest/api/browser-window#winsetcontentprotectionenable-windows-macos" target="_blank" rel="noopener">Electron: BrowserWindow setContentProtection</a></li>
+          </ul>
+        </section>
+
+        <aside class="article-cta">
+          <p class="eyebrow">Try it</p>
+          <h2>Float YouTube over your work.</h2>
+          <p>Free and open source for Windows 10 and 11. Installer or portable ZIP, no account and no telemetry.</p>
+          <div class="article-cta-actions">
+            <a class="btn btn-primary" href="https://github.com/poshithNandyala/airframe/releases/download/v1.5.0/Airframe-Setup-1.5.0.exe" download data-download="installer">
+              <svg class="icon"><use href="#i-download"/></svg>
+              <span>Download for Windows</span>
+            </a>
+            <a class="btn btn-ghost" href="../#download">Installer &amp; portable ZIP</a>
+          </div>
+          <p class="article-cta-fine">v1.5.0 &middot; Windows 10/11 x64 &middot; MIT licensed</p>
+        </aside>
+
+        <div class="author-box">
+          <img src="../icon.png" width="52" height="52" alt="" loading="lazy" />
+          <div>
+            <strong>Poshith Nandyala</strong>
+            <p>I build Airframe, a free floating YouTube player for Windows. These guides cover the window tricks behind it and the setups that actually work.</p>
+            <a href="https://github.com/poshithNandyala" target="_blank" rel="noopener">GitHub profile</a>
+          </div>
+        </div>
+
+        <nav class="related" aria-labelledby="related-title">
+          <h2 id="related-title">Related guides</h2>
+          <div class="related-grid">
+          <a class="related-card" href="../watch-youtube-while-working/">
+            <span class="related-kicker">Guide</span>
+            <strong>How to watch YouTube while you work</strong>
+            <span>A five-minute floating setup that does not take over your screen.</span>
+          </a>
+          <a class="related-card" href="../always-on-top-youtube-player/">
+            <span class="related-kicker">Guide</span>
+            <strong>Always-on-top YouTube player for Windows</strong>
+            <span>Keep YouTube above every other window on Windows 10 and 11.</span>
+          </a>
+          <a class="related-card" href="../watch-youtube-while-gaming/">
+            <span class="related-kicker">Guide</span>
+            <strong>How to watch YouTube while gaming on Windows</strong>
+            <span>Borderless setup, performance tips and capture privacy for a single screen.</span>
+          </a>
+          <a class="related-card" href="../best-floating-youtube-player-windows/">
+            <span class="related-kicker">Guide</span>
+            <strong>Best floating YouTube player for Windows</strong>
+            <span>Airframe vs browser PiP, PowerToys, WindowTop and other floating players.</span>
+          </a>
+          </div>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../" aria-label="Airframe home">
+          <span class="brand-mark"><svg class="icon"><use href="#i-play"/></svg></span>
+          <span class="brand-name">Airframe</span>
+        </a>
+        <p>A quiet floating screen for YouTube on Windows 10/11.</p>
+        <span class="footer-version">v<span data-version>1.5.0</span> &middot; MIT</span>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <a href="../#features">Features</a>
+        <a href="../#screens">Screens</a>
+        <a href="../#shortcuts">Shortcuts</a>
+        <a href="../#download">Download</a>
+        <a href="../#faq">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Guides</h4>
+        <a href="../always-on-top-youtube-player/">Always on top</a>
+        <a href="../watch-youtube-while-working/">Watch while working</a>
+        <a href="../picture-in-picture-alternative/">PiP alternative</a>
+        <a href="../hide-window-from-screen-share/">Screen-share privacy</a>
+        <a href="../make-window-click-through-windows/">Click-through</a>
+      </div>
+
+      <div>
+        <h4>GitHub</h4>
+        <a href="https://github.com/poshithNandyala" target="_blank" rel="noopener">Poshith Nandyala</a>
+        <a href="https://github.com/poshithNandyala/airframe" target="_blank" rel="noopener">Source</a>
+        <a href="https://github.com/poshithNandyala/airframe/releases" target="_blank" rel="noopener">Releases</a>
+        <a href="https://github.com/poshithNandyala/airframe/issues" target="_blank" rel="noopener">Issues</a>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <a href="https://github.com/poshithNandyala/airframe/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+        <a href="https://github.com/poshithNandyala/airframe/releases/tag/v1.5.0" target="_blank" rel="noopener">Release notes</a>
+        <p class="footer-fine">Airframe is an independent project. Not affiliated with YouTube, Google, Amazon, Netflix, Twitch or Microsoft. All product names are trademarks of their respective owners.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Poshith Nandyala. Made for Windows 10 &amp; 11.</p>
+      <a href="#top">Back to top <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../site.js"></script>
+</body>
+</html>

@@ -1,12 +1,15 @@
 {
-  "name": "Airframe",
+  "id": "/airframe/",
+  "name": "Airframe - Floating YouTube Player for Windows",
   "short_name": "Airframe",
-  "description": "A quiet, floating YouTube screen for Windows 10 and 11.",
+  "description": "A free, always-on-top YouTube player for Windows 10 and 11 with opacity, click-through and screen-share protection.",
   "start_url": "/airframe/",
   "scope": "/airframe/",
   "display": "standalone",
   "background_color": "#08080a",
   "theme_color": "#ff2d55",
+  "lang": "en-US",
+  "categories": ["entertainment", "productivity", "utilities"],
   "icons": [
     {
       "src": "icon.png",
@@ -19,6 +22,22 @@
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "launcher.png",
+      "sizes": "1202x753",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "The Airframe launcher with YouTube ready"
+    },
+    {
+      "src": "og.png",
+      "sizes": "1200x630",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Airframe floating over the Windows desktop"
     }
   ]
 }

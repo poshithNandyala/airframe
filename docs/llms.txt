@@ -1,0 +1,44 @@
+# Airframe
+
+> Airframe is a free, open-source, always-on-top YouTube player for Windows 10 and 11. It keeps YouTube in a borderless floating window that can fade to any opacity, become click-through, hide from screen share, and be controlled with global Alt shortcuts.
+
+## Key facts
+
+- Name: Airframe
+- Version: 1.5.0 (released November 22, 2026)
+- Platform: Windows 10 and Windows 11, 64-bit
+- Price: free, MIT licensed
+- Source: https://github.com/poshithNandyala/airframe
+- Download: https://github.com/poshithNandyala/airframe/releases/download/v1.5.0/Airframe-Setup-1.5.0.exe
+- Portable ZIP: https://github.com/poshithNandyala/airframe/releases/download/v1.5.0/Airframe-1.5.0-win-x64.zip
+- Website: https://poshithnandyala.github.io/airframe/
+- Author: Poshith Nandyala (https://github.com/poshithNandyala)
+
+## What it does
+
+- Always-on-top YouTube window with no title bar or taskbar button
+- 0-100% opacity and true click-through display mode
+- Screen-share shield using Windows display affinity
+- 14 global Alt shortcuts, including shortcuts that do not stick in the app you are typing in
+- Touchpad back/forward gestures and mouse side buttons
+- Ad and tracker filtering
+- Local-only YouTube sign-in in %APPDATA%\Airframe; no account, server or telemetry
+- Prime Video, Netflix and Twitch screens are planned (coming soon)
+
+## Guides
+
+- [Always-on-top YouTube player for Windows](https://poshithnandyala.github.io/airframe/always-on-top-youtube-player/) — Keep YouTube above every other window on Windows 10 and 11.
+- [How to watch YouTube while you work](https://poshithnandyala.github.io/airframe/watch-youtube-while-working/) — A five-minute floating setup that does not take over your screen.
+- [A better picture-in-picture alternative for Windows](https://poshithnandyala.github.io/airframe/picture-in-picture-alternative/) — Why browser PiP feels limited, and what to use instead on Windows.
+- [YouTube mini player on Windows 11](https://poshithnandyala.github.io/airframe/youtube-mini-player-windows-11/) — Get a real floating mini player instead of the in-tab version.
+- [How to hide a window from screen share on Windows](https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/) — Keep YouTube out of Teams, Zoom, Meet and OBS screen shares.
+- [How to make a window click-through on Windows](https://poshithnandyala.github.io/airframe/make-window-click-through-windows/) — Make clicks reach the app behind the video, not the video itself.
+- [How to watch YouTube while gaming on Windows](https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/) — Borderless setup, performance tips and capture privacy for a single screen.
+- [Best floating YouTube player for Windows](https://poshithnandyala.github.io/airframe/best-floating-youtube-player-windows/) — Airframe vs browser PiP, PowerToys, WindowTop and other floating players.
+
+## Limitations
+
+- Windows 10/11 x64 only
+- YouTube is the only finished screen today
+- Rented or DRM-only YouTube movies may not play
+- The installer is not code-signed yet, so SmartScreen may warn

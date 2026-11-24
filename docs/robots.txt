@@ -1,3 +1,6 @@
+# Airframe - https://poshithnandyala.github.io/airframe/
+# Public marketing site. All pages are crawlable.
+
 User-agent: *
 Allow: /
 

@@ -1,9 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://poshithnandyala.github.io/airframe/</loc>
     <lastmod>2026-11-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://poshithnandyala.github.io/airframe/launcher.png</image:loc>
+      <image:title>Airframe 1.5.0 launcher with YouTube ready</image:title>
+      <image:caption>The Airframe launcher: YouTube is ready, with Prime Video, Netflix and Twitch coming soon.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://poshithnandyala.github.io/airframe/og.png</image:loc>
+      <image:title>Airframe floating YouTube player for Windows</image:title>
+      <image:caption>Airframe keeps YouTube in an always-on-top window while you work.</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://poshithnandyala.github.io/airframe/always-on-top-youtube-player/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://poshithnandyala.github.io/airframe/watch-youtube-while-working/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://poshithnandyala.github.io/airframe/picture-in-picture-alternative/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://poshithnandyala.github.io/airframe/youtube-mini-player-windows-11/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://poshithnandyala.github.io/airframe/hide-window-from-screen-share/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://poshithnandyala.github.io/airframe/make-window-click-through-windows/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://poshithnandyala.github.io/airframe/best-floating-youtube-player-windows/</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

@@ -1,0 +1,449 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Watch YouTube While Gaming on Windows: Floating Overlay</title>
+  <meta name="description" content="Watch YouTube over a game on Windows 10/11 with a floating always-on-top window. Borderless vs fullscreen, performance tips, and capture privacy." />
+  <meta name="author" content="Poshith Nandyala" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="theme-color" content="#08080a" />
+  <link rel="canonical" href="https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/" />
+  <link rel="icon" href="../icon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="../icon.png" />
+  <link rel="manifest" href="../site.webmanifest" />
+  <link rel="stylesheet" href="../styles.css" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Airframe" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:title" content="Watch YouTube While Gaming on Windows: Floating Overlay" />
+  <meta property="og:description" content="Watch YouTube over a game on Windows 10/11 with a floating always-on-top window. Borderless vs fullscreen, performance tips, and capture privacy." />
+  <meta property="og:url" content="https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/" />
+  <meta property="og:image" content="https://poshithnandyala.github.io/airframe/og.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Airframe, a floating always-on-top YouTube player for Windows 10 and 11." />
+  <meta property="article:published_time" content="2026-11-25T00:00:00+00:00" />
+  <meta property="article:modified_time" content="2026-11-25T00:00:00+00:00" />
+  <meta property="article:author" content="Poshith Nandyala" />
+  <meta property="article:section" content="Guides" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Watch YouTube While Gaming on Windows: Floating Overlay" />
+  <meta name="twitter:description" content="Watch YouTube over a game on Windows 10/11 with a floating always-on-top window. Borderless vs fullscreen, performance tips, and capture privacy." />
+  <meta name="twitter:image" content="https://poshithnandyala.github.io/airframe/og.png" />
+  <meta name="twitter:image:alt" content="Airframe, a floating always-on-top YouTube player for Windows 10 and 11." />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/#article",
+      "headline": "How to watch YouTube while gaming on Windows",
+      "description": "Watch YouTube over a game on Windows 10/11 with a floating always-on-top window. Borderless vs fullscreen, performance tips, and capture privacy.",
+      "image": "https://poshithnandyala.github.io/airframe/og.png",
+      "url": "https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/",
+      "datePublished": "2026-11-25T00:00:00+00:00",
+      "dateModified": "2026-11-25T00:00:00+00:00",
+      "inLanguage": "en",
+      "articleSection": "Guides",
+      "keywords": "watch youtube while gaming, youtube overlay for gaming, floating youtube over game, watch youtube while gaming windows, youtube while playing games",
+      "wordCount": 761,
+      "author": {
+        "@type": "Person",
+        "name": "Poshith Nandyala",
+        "url": "https://github.com/poshithNandyala"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Airframe",
+        "url": "https://poshithnandyala.github.io/airframe/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://poshithnandyala.github.io/airframe/icon.png"
+        }
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://poshithnandyala.github.io/airframe/#website",
+        "name": "Airframe",
+        "url": "https://poshithnandyala.github.io/airframe/"
+      },
+      "about": {
+        "@type": "SoftwareApplication",
+        "name": "Airframe",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Windows 10, Windows 11",
+        "url": "https://poshithnandyala.github.io/airframe/"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Airframe",
+          "item": "https://poshithnandyala.github.io/airframe/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://poshithnandyala.github.io/airframe/#guides"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Watch while gaming",
+          "item": "https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://poshithnandyala.github.io/airframe/watch-youtube-while-gaming/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Does watching YouTube lower FPS?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It can. Video decode and Chromium composition use some CPU and GPU. A small 720p or 1080p window is usually light on a modern system; 4K, high frame rates and multiple players cost more. Measure with your game overlay and lower the video resolution if you notice stutter."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Airframe work over fullscreen games?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It works best in borderless windowed mode. Exclusive fullscreen can cover every always-on-top window because the game takes direct control of the display. Switch the game to borderless or windowed mode if the video disappears."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use Airframe on a single monitor?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. That is the main use case. Resize the video to a corner, set opacity, and use click-through so your mouse controls the game."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Will an overlay get me banned by anti-cheat?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Airframe is a separate window. It does not inject into the game or hook its process. Always-on-top overlays are generally allowed, but anti-cheat policies vary. Check the game and publisher rules if you are unsure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I hide the video from my stream?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, in most cases. Leave the screen-share shield on and use OBS Display Capture. The window is excluded from the capture. Turn the shield off if you want viewers to see it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does Airframe work with HDR or variable refresh rate?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "HDR and VRR behavior depends on the game, the display mode and the GPU driver. Borderless windowed mode can change how both are handled. Test the game with the overlay before committing to a ranked match."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body class="article-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8.4 6.1 18.4 12 8.4 17.9V6.1Z" fill="currentColor"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.2 1.2a11 11 0 0 1 5.8 0c2.2-1.5 3.2-1.2 3.2-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></symbol>
+  </svg>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg-grid"></div>
+    <div class="orb orb-a"></div>
+    <div class="orb orb-b"></div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../" aria-label="Airframe home">
+        <span class="brand-mark"><svg class="icon"><use href="#i-play"/></svg></span>
+        <span class="brand-name">Airframe</span>
+        <span class="brand-version">v<span data-version>1.5.0</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main">
+        <a href="../#features">Features</a>
+        <a href="../#screens">Screens</a>
+        <a href="../#shortcuts">Shortcuts</a>
+        <a href="../#guides">Guides</a>
+        <a href="../#download">Download</a>
+        <a href="../#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="icon-link" href="https://github.com/poshithNandyala/airframe" target="_blank" rel="noopener" aria-label="Airframe on GitHub">
+          <svg class="icon"><use href="#i-github"/></svg>
+        </a>
+        <a class="btn btn-primary btn-small" href="https://github.com/poshithNandyala/airframe/releases/download/v1.5.0/Airframe-Setup-1.5.0.exe" download data-download="installer">
+          <svg class="icon"><use href="#i-download"/></svg>
+          <span>Download</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="article">
+      <div class="container article-container">
+        <nav class="breadcrumbs" aria-label="Breadcrumb">
+          <a href="../">Airframe</a>
+          <span aria-hidden="true">/</span>
+          <a href="../#guides">Guides</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">Watch while gaming</span>
+        </nav>
+
+        <header class="article-head">
+          <p class="eyebrow">Gaming guide</p>
+          <h1>How to watch YouTube while gaming on Windows</h1>
+          <p class="article-lede">One monitor is enough if the game runs borderless and the video knows how to stay out of the way. Here is the setup, the performance cost, and how to keep it off your stream.</p>
+          <div class="article-meta">
+            <span>By <a href="https://github.com/poshithNandyala" rel="author">Poshith Nandyala</a></span>
+            <span>Updated <time datetime="2026-11-25">November 25, 2026</time></span>
+            <span>4 min read</span>
+          </div>
+        </header>
+
+        <div class="quick-answer">
+          <span class="quick-label">Short answer</span>
+          <p>Set the game to borderless windowed mode, open YouTube in Airframe, and park the video in a corner. Exclusive fullscreen can cover any always-on-top window. A second monitor is still the best option for performance.</p>
+        </div>
+
+        <div class="article-body">
+        <p>Watching a guide, a stream or a video essay while you game is a normal second-screen habit. On a single monitor it takes a little more setup, because the game and the video are competing for the same display. The key is borderless windowed mode and a video window that knows how to stay out of the way.</p>
+
+        <h2 id="fullscreen">Borderless windowed vs exclusive fullscreen</h2>
+
+        <p>Exclusive fullscreen gives the game direct control of the display. That is good for latency and some HDR setups, but it also means the game can cover every normal window, including an always-on-top video. Borderless windowed mode keeps the game inside the Windows desktop compositor, where overlays can appear.</p>
+
+        <p>Most modern games call this "Borderless," "Fullscreen Windowed" or "Windowed Fullscreen." The exact label varies, but the behavior is the same: the game fills the screen without taking exclusive control. If the video disappears when you alt-tab back into the game, this setting is the first thing to change.</p>
+
+        <h2 id="three-ways">Three ways to watch YouTube while gaming</h2>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr><th>Setup</th><th>Performance</th><th>Screen space</th><th>Best for</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Second monitor</strong></td><td>Best</td><td>Needs a second display</td><td>Long sessions, high-end setups</td></tr>
+              <tr><td><strong>Airframe over a borderless game</strong></td><td>Good on modern hardware</td><td>One screen, any size</td><td>Single-monitor setups and laptop gaming</td></tr>
+              <tr><td><strong>Browser picture-in-picture</strong></td><td>Good</td><td>Small floating box</td><td>A quick clip with no install</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2 id="setup">Set up Airframe over a game</h2>
+
+        <ol class="steps">
+          <li><strong>Switch the game to borderless windowed mode.</strong> Apply the setting and restart the game if it asks.</li>
+          <li><strong>Launch Airframe and open YouTube.</strong> Start the video or playlist before you go back to the game.</li>
+          <li><strong>Resize and park the window.</strong> A corner works best. Avoid the area where the game shows its minimap, kill feed or ability bar.</li>
+          <li><strong>Set opacity.</strong> <kbd>Alt</kbd><kbd>Shift</kbd><kbd>&darr;</kbd> fades the video. 60&ndash;80% is a reasonable starting point for a game.</li>
+          <li><strong>Bring the game to the front and press <kbd>Alt</kbd><kbd>L</kbd>.</strong> Your mouse now controls the game through the video.</li>
+          <li><strong>Use <kbd>Alt</kbd><kbd>H</kbd> to hide the video instantly.</strong> Useful for a cutscene, a boss fight or a ranked match.</li>
+        </ol>
+
+        <p>Airframe has no taskbar button, so you will not find it in Alt+Tab. Use its global shortcuts &mdash; <kbd>Alt</kbd><kbd>H</kbd> to show it again, <kbd>Alt</kbd><kbd>B</kbd> to return to the launcher, and <kbd>Alt</kbd><kbd>Q</kbd> to quit.</p>
+
+        <h2 id="performance">Performance tips</h2>
+
+        <ul>
+          <li><strong>Match the video to the job.</strong> 720p is enough for a small corner window. 1080p is fine on most discrete GPUs; 4K is usually wasted on a 400-pixel-wide box.</li>
+          <li><strong>Pause when you are not watching.</strong> A paused video still holds a window, but it stops decoding.</li>
+          <li><strong>Close other browser tabs and players.</strong> Two YouTube windows are two decoders.</li>
+          <li><strong>Use hardware acceleration.</strong> Chromium hardware-decodes common YouTube codecs by default. If you have disabled it globally, expect more CPU use.</li>
+          <li><strong>Watch the frame-time graph, not just average FPS.</strong> A video can cost a few frames without changing the average much, but cause uneven pacing.</li>
+          <li><strong>Try exclusive fullscreen for competitive games.</strong> If you do not need the video during a match, hide Airframe and switch modes.</li>
+        </ul>
+
+        <h2 id="streaming">Keep the video out of your stream</h2>
+
+        <p>If you stream or record, the last thing you want is a random YouTube recommendation in the corner of the VOD. Airframe's shield is on by default. In OBS, use Display Capture for the desktop; the protected window is excluded. Game Capture only captures the game, so the overlay is not included either.</p>
+
+        <p>If you want viewers to see the video, turn the shield off with <kbd>Alt</kbd><kbd>S</kbd> and capture the window or display normally. If you are streaming copyrighted music or video, check the platform's rules and the rights holder's policy. That is a separate problem from the capture setup.</p>
+
+        <h2 id="anticheat">Anti-cheat and fair play</h2>
+
+        <p>Airframe is an Electron window that sits above the game. It does not inject code into the game process, hook DirectX, or modify game memory. That makes it different from a traditional game overlay, but it does not guarantee that every anti-cheat or tournament ruleset allows it.</p>
+
+        <p>For competitive play, check the game's rules. For casual play, a video in the corner is usually fine. Do not use any overlay to gain information the game does not give you; that is a cheating problem, not a video-player problem.</p>
+
+        <h2 id="bottom-line">The bottom line</h2>
+
+        <p>On a single monitor, borderless windowed mode plus a small floating YouTube window is the practical setup. Airframe keeps the video on top, lets you fade it, lets your mouse pass through to the game, and keeps it out of most captures. Start at 720p, park it in a corner, and hide it when the game needs your full attention.</p>
+
+        <p><a class="inline-cta" href="../#download">Download Airframe for Windows <span aria-hidden="true">&rarr;</span></a></p>
+        </div>
+
+        <section class="article-section" id="faq">
+          <h2>Frequently asked questions</h2>
+          <div class="article-faq">
+            <details>
+              <summary>Does watching YouTube lower FPS?</summary>
+              <p>It can. Video decode and Chromium composition use some CPU and GPU. A small 720p or 1080p window is usually light on a modern system; 4K, high frame rates and multiple players cost more. Measure with your game overlay and lower the video resolution if you notice stutter.</p>
+            </details>
+            <details>
+              <summary>Does Airframe work over fullscreen games?</summary>
+              <p>It works best in borderless windowed mode. Exclusive fullscreen can cover every always-on-top window because the game takes direct control of the display. Switch the game to borderless or windowed mode if the video disappears.</p>
+            </details>
+            <details>
+              <summary>Can I use Airframe on a single monitor?</summary>
+              <p>Yes. That is the main use case. Resize the video to a corner, set opacity, and use click-through so your mouse controls the game.</p>
+            </details>
+            <details>
+              <summary>Will an overlay get me banned by anti-cheat?</summary>
+              <p>Airframe is a separate window. It does not inject into the game or hook its process. Always-on-top overlays are generally allowed, but anti-cheat policies vary. Check the game and publisher rules if you are unsure.</p>
+            </details>
+            <details>
+              <summary>Can I hide the video from my stream?</summary>
+              <p>Yes, in most cases. Leave the screen-share shield on and use OBS Display Capture. The window is excluded from the capture. Turn the shield off if you want viewers to see it.</p>
+            </details>
+            <details>
+              <summary>Does Airframe work with HDR or variable refresh rate?</summary>
+              <p>HDR and VRR behavior depends on the game, the display mode and the GPU driver. Borderless windowed mode can change how both are handled. Test the game with the overlay before committing to a ranked match.</p>
+            </details>
+          </div>
+        </section>
+
+        
+
+        <aside class="article-cta">
+          <p class="eyebrow">Try it</p>
+          <h2>Float YouTube over your work.</h2>
+          <p>Free and open source for Windows 10 and 11. Installer or portable ZIP, no account and no telemetry.</p>
+          <div class="article-cta-actions">
+            <a class="btn btn-primary" href="https://github.com/poshithNandyala/airframe/releases/download/v1.5.0/Airframe-Setup-1.5.0.exe" download data-download="installer">
+              <svg class="icon"><use href="#i-download"/></svg>
+              <span>Download for Windows</span>
+            </a>
+            <a class="btn btn-ghost" href="../#download">Installer &amp; portable ZIP</a>
+          </div>
+          <p class="article-cta-fine">v1.5.0 &middot; Windows 10/11 x64 &middot; MIT licensed</p>
+        </aside>
+
+        <div class="author-box">
+          <img src="../icon.png" width="52" height="52" alt="" loading="lazy" />
+          <div>
+            <strong>Poshith Nandyala</strong>
+            <p>I build Airframe, a free floating YouTube player for Windows. These guides cover the window tricks behind it and the setups that actually work.</p>
+            <a href="https://github.com/poshithNandyala" target="_blank" rel="noopener">GitHub profile</a>
+          </div>
+        </div>
+
+        <nav class="related" aria-labelledby="related-title">
+          <h2 id="related-title">Related guides</h2>
+          <div class="related-grid">
+          <a class="related-card" href="../always-on-top-youtube-player/">
+            <span class="related-kicker">Guide</span>
+            <strong>Always-on-top YouTube player for Windows</strong>
+            <span>Keep YouTube above every other window on Windows 10 and 11.</span>
+          </a>
+          <a class="related-card" href="../make-window-click-through-windows/">
+            <span class="related-kicker">Guide</span>
+            <strong>How to make a window click-through on Windows</strong>
+            <span>Make clicks reach the app behind the video, not the video itself.</span>
+          </a>
+          <a class="related-card" href="../hide-window-from-screen-share/">
+            <span class="related-kicker">Guide</span>
+            <strong>How to hide a window from screen share on Windows</strong>
+            <span>Keep YouTube out of Teams, Zoom, Meet and OBS screen shares.</span>
+          </a>
+          <a class="related-card" href="../best-floating-youtube-player-windows/">
+            <span class="related-kicker">Guide</span>
+            <strong>Best floating YouTube player for Windows</strong>
+            <span>Airframe vs browser PiP, PowerToys, WindowTop and other floating players.</span>
+          </a>
+          </div>
+        </nav>
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="../" aria-label="Airframe home">
+          <span class="brand-mark"><svg class="icon"><use href="#i-play"/></svg></span>
+          <span class="brand-name">Airframe</span>
+        </a>
+        <p>A quiet floating screen for YouTube on Windows 10/11.</p>
+        <span class="footer-version">v<span data-version>1.5.0</span> &middot; MIT</span>
+      </div>
+
+      <div>
+        <h4>Product</h4>
+        <a href="../#features">Features</a>
+        <a href="../#screens">Screens</a>
+        <a href="../#shortcuts">Shortcuts</a>
+        <a href="../#download">Download</a>
+        <a href="../#faq">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Guides</h4>
+        <a href="../always-on-top-youtube-player/">Always on top</a>
+        <a href="../watch-youtube-while-working/">Watch while working</a>
+        <a href="../picture-in-picture-alternative/">PiP alternative</a>
+        <a href="../hide-window-from-screen-share/">Screen-share privacy</a>
+        <a href="../make-window-click-through-windows/">Click-through</a>
+      </div>
+
+      <div>
+        <h4>GitHub</h4>
+        <a href="https://github.com/poshithNandyala" target="_blank" rel="noopener">Poshith Nandyala</a>
+        <a href="https://github.com/poshithNandyala/airframe" target="_blank" rel="noopener">Source</a>
+        <a href="https://github.com/poshithNandyala/airframe/releases" target="_blank" rel="noopener">Releases</a>
+        <a href="https://github.com/poshithNandyala/airframe/issues" target="_blank" rel="noopener">Issues</a>
+      </div>
+
+      <div>
+        <h4>Legal</h4>
+        <a href="https://github.com/poshithNandyala/airframe/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
+        <a href="https://github.com/poshithNandyala/airframe/releases/tag/v1.5.0" target="_blank" rel="noopener">Release notes</a>
+        <p class="footer-fine">Airframe is an independent project. Not affiliated with YouTube, Google, Amazon, Netflix, Twitch or Microsoft. All product names are trademarks of their respective owners.</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Poshith Nandyala. Made for Windows 10 &amp; 11.</p>
+      <a href="#top">Back to top <svg class="icon"><use href="#i-arrow"/></svg></a>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="../site.js"></script>
+</body>
+</html>
