@@ -36,10 +36,12 @@ Rule: one page per intent. Do not add another page that targets the same query w
 
 ### Day 0 - deploy and submit
 
-- [ ] Deploy the SEO build to GitHub Pages.
-- [ ] Submit all URLs to IndexNow (Bing, Yandex and partners).
-- [ ] Verify the IndexNow key file returns 200.
-- [ ] Confirm every URL in `sitemap.xml` returns 200.
+- [x] Deploy the SEO build to GitHub Pages.
+- [x] Submit all URLs to IndexNow (Bing, Yandex and partners).
+- [x] Verify the IndexNow key file returns 200.
+- [x] Confirm every URL in `sitemap.xml` returns 200.
+
+**Live status (November 25, 2026):** 9/9 pages return 200, the sitemap lists 9 URLs, the key file matches, the custom 404 works, both release assets return `Content-Disposition: attachment`, and IndexNow returned `202 Accepted`. Google Search Console and Bing Webmaster verification are the remaining account-level steps.
 
 ### Day 1 - Google Search Console
 
