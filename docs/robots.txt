@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://poshithnandyala.github.io/airframe/sitemap.xml
