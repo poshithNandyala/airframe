@@ -106,7 +106,7 @@ function footer() {
       </div>
 
       <div>
-        <h4>Product</h4>
+        <h3>Product</h3>
         <a href="../#features">Features</a>
         <a href="../#screens">Screens</a>
         <a href="../#shortcuts">Shortcuts</a>
@@ -115,7 +115,7 @@ function footer() {
       </div>
 
       <div>
-        <h4>Guides</h4>
+        <h3>Guides</h3>
         <a href="../always-on-top-youtube-player/">Always on top</a>
         <a href="../watch-youtube-while-working/">Watch while working</a>
         <a href="../picture-in-picture-alternative/">PiP alternative</a>
@@ -124,7 +124,7 @@ function footer() {
       </div>
 
       <div>
-        <h4>GitHub</h4>
+        <h3>GitHub</h3>
         <a href="https://github.com/poshithNandyala" target="_blank" rel="noopener">Poshith Nandyala</a>
         <a href="https://github.com/poshithNandyala/airframe" target="_blank" rel="noopener">Source</a>
         <a href="https://github.com/poshithNandyala/airframe/releases" target="_blank" rel="noopener">Releases</a>
@@ -132,7 +132,7 @@ function footer() {
       </div>
 
       <div>
-        <h4>Legal</h4>
+        <h3>Legal</h3>
         <a href="https://github.com/poshithNandyala/airframe/blob/main/LICENSE" target="_blank" rel="noopener">MIT License</a>
         <a href="https://github.com/poshithNandyala/airframe/releases/tag/v1.5.0" target="_blank" rel="noopener">Release notes</a>
         <p class="footer-fine">Airframe is an independent project. Not affiliated with YouTube, Google, Amazon, Netflix, Twitch or Microsoft. All product names are trademarks of their respective owners.</p>
@@ -482,6 +482,23 @@ ${entry.images.length
 
 fs.writeFileSync(path.join(docs, 'sitemap.xml'), sitemap, 'utf8');
 console.log('wrote docs/sitemap.xml');
+
+// A minimal fallback sitemap. Some Search Console fetches choke on the image
+// extension or a future lastmod; this file removes both variables.
+const minimalSitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls
+  .map(
+    (entry) => `  <url>
+    <loc>${entry.loc}</loc>
+    <lastmod>2026-11-24</lastmod>
+  </url>`
+  )
+  .join('\n')}
+</urlset>
+`;
+fs.writeFileSync(path.join(docs, 'sitemap2.xml'), minimalSitemap, 'utf8');
+console.log('wrote docs/sitemap2.xml');
 
 const pageList = pages
   .map((page) => `- [${page.h1}](${SITE}/${page.slug}/) — ${page.card}`)

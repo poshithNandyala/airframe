@@ -5,3 +5,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://poshithnandyala.github.io/airframe/sitemap.xml
+Sitemap: https://poshithnandyala.github.io/airframe/sitemap2.xml
